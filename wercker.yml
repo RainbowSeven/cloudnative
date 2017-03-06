@@ -64,7 +64,7 @@ deploy:
         cmd: /pipeline/source/hello
         port: "8080"
         tag: latest
-        repository: cloudnativego/book-hello
+        repository: oluwafemisule/book-hello
         registry: https://registry.hub.docker.com
     - cng/cf-deploy:
         api: $API
@@ -73,5 +73,5 @@ deploy:
         org: $ORG
         space: $SPACE
         appname: wercker-step-hello
-        docker_image: cloudnativego/book-hello
+        docker_image: oluwafemisule/book-hello
 
